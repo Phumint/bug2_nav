@@ -145,5 +145,27 @@ ros2 launch bug2_nav obstacle.launch.py
 ```bash
 ros2 run bug2_nav attract
 ```
+**You can adjust the following parameters:**
 
+- `goal_x`, `goal_y`: Coordinates of the target. Example : `ros2 run bug2_nav attract --ros-args -p goal_x:=3.0 -p goal_y:=5.0`
+
+- `attractive_gain`: Strength of attraction toward the goal
+
+- `repulsive_gain`: Strength of repulsion from obstacles
+
+- `obstacle_influence_radius`: Range at which obstacles affect the robot
+
+- `goal_threshold`: Distance threshold to consider goal reached
+
+**Core Logic**
+
+- Attractive Force pulls the robot toward the goal.
+
+- Repulsive Forces push the robot away from known obstacles defined in the script.
+
+- Linear and angular velocities are computed based on the direction and magnitude of the total force vector.
+
+**Known Obstacles**
+
+- Obstacles are hardcoded in the script as (x, y, radius) tuples. The robot computes its distance to each obstacle and generates repulsive forces accordingly.
 
