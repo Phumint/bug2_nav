@@ -30,7 +30,7 @@ You can run the simulation for the circumvaigation algorithm with the following 
 ```bash
 ros2 launch bug2_nav building_1.launch.py
 ```
-2. **In another terminal, run the Bug 0 node:**
+2. **In another terminal, run the wall following node:**
 ```bash
 ros2 run bug2_nav right_wall_following
 ```
