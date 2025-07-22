@@ -86,9 +86,7 @@ loop:
             state ← TURN_TO_WALL
         else if in open space:
             state ← SEARCH_FOR_WALL
-
 ```
-
 ### Bug 0 Algorithm
 ```
 while not at goal:
