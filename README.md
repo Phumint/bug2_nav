@@ -128,4 +128,20 @@ ros2 launch bug2_nav building_2.launch.py
 ```bash
 ros2 run bug2_nav bug0_building_2
 ```
+### Potential Field Algorithm
+
+This node implements obstacle avoidance using a Potential Field Method. The robot is simultaneously attracted to a goal and repelled from known obstacles. This is useful in environments where obstacles are known in advance and can be hardcoded or mapped.
+
+You can run the potential field algorithm with the following commands:
+
+1. **In one terminal, launch the world:**
+
+```bash
+ros2 launch bug2_nav obstacle.launch.py
+```
+2. **In another terminal, run the Bug 0 node:**
+```bash
+ros2 run bug2_nav attract
+```
+
 
