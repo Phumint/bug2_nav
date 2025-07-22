@@ -31,6 +31,17 @@ while not at goal:
         while unable to move directly towards the goal:
             follow the obstacle’s boundary on the left side
 ```
-
 ![Bug 2 Example](images/Screenshot%20from%202025-07-22%2011-04-14.png)
+
+You can run the example in the image above with the following commands:
+
+1. **In one terminal, launch the world:**
+
+```bash
+ros2 launch bug2_nav building_0.launch.py
+```
+2. **In another terminal, run the Bug 0 node:**
+```bash
+ros2 run bug2_nav bug0_building_0
+```
 
