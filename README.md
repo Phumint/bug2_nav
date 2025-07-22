@@ -132,6 +132,8 @@ ros2 run bug2_nav bug0_building_2
 
 This node implements obstacle avoidance using a Potential Field Method. The robot is simultaneously attracted to a goal and repelled from known obstacles. This is useful in environments where obstacles are known in advance and can be hardcoded or mapped.
 
+![Potential Field](images/vectorSumOfTwoFields.png)
+
 You can run the potential field algorithm with the following commands:
 
 1. **In one terminal, launch the world:**
