@@ -32,4 +32,5 @@ while not at goal:
             follow the obstacle’s boundary on the left side
 ```
 
-![Bug 2 Diagram](images/Screenshot%from%2025-07-22%11-04-14.png)
+![Bug 2 Example](images/Screenshot%20from%202025-07-22%2011-04-14.png)
+
