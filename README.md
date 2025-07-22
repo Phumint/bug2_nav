@@ -4,6 +4,10 @@ A custom ROS 2 package for TurtleBot3 that implements autonomous navigation usin
 
 This package and documentation are inspired by concepts from the textbook *Lectures on Robotic Planning and Kinematics* by Francesco Bullo and Stephen L. Smith.
 
+> **Note:** This repository assumes you already have a working TurtleBot3 ROS 2 workspace (`turtlebot3_ws`).  
+> If you haven't set up TurtleBot3 yet, please follow the official installation guide here:  
+> [TurtleBot3 ROS 2 Installation](https://emanual.robotis.com/docs/en/platform/turtlebot3/ros2_setup/)
+
 ---
 
 ### Clone the bug2_nav package
