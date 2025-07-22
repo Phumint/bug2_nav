@@ -22,6 +22,20 @@ colcon build --packages-select bug2_nav
 # Source your workspace
 source install/setup.bash
 ```
+### Circumnavigation Algorithm
+You can run the simulation for the circumvaigation algorithm with the following commands:
+
+1. **In one terminal, launch the world:**
+
+```bash
+ros2 launch bug2_nav building_1.launch.py
+```
+2. **In another terminal, run the Bug 0 node:**
+```bash
+ros2 run bug2_nav right_wall_following
+```
+
+
 ### Bug 0 Algorithm
 ```
 while not at goal:
