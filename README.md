@@ -116,6 +116,7 @@ ros2 run bug2_nav bug0_building_0
 The Bug 0 algorithm is not guaranteed to find a path in every scenario. There are cases—depending on the workspace layout, obstacle arrangement, and start and goal positions—where a valid path exists, but Bug 0 fails to reach the goal. This limitation is related to the concept of algorithm completeness, which we will discuss further elsewhere. For example, the illustration in Figure 1.3 shows how Bug 0 can get stuck in a periodic loop without making complete progress toward the goal.
 
 ![Description of image](images/Screenshot%20from%202025-07-22%2011-04-42.png)
+
 You can run the example in the image above with the following commands:
 
 1. **In one terminal, launch the world:**
