@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+bug2_nav/__init__.py
+bug2_nav/laser_scan.py
+bug2_nav/left_wall_following.py
+build/bug2_nav/bug2_nav.egg-info/PKG-INFO
+build/bug2_nav/bug2_nav.egg-info/SOURCES.txt
+build/bug2_nav/bug2_nav.egg-info/dependency_links.txt
+build/bug2_nav/bug2_nav.egg-info/entry_points.txt
+build/bug2_nav/bug2_nav.egg-info/requires.txt
+build/bug2_nav/bug2_nav.egg-info/top_level.txt
+build/bug2_nav/bug2_nav.egg-info/zip-safe
+resource/bug2_nav
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

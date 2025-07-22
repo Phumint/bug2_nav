@@ -1,0 +1,38 @@
+running egg_info
+creating build/bug2_nav/bug2_nav.egg-info
+writing build/bug2_nav/bug2_nav.egg-info/PKG-INFO
+writing dependency_links to build/bug2_nav/bug2_nav.egg-info/dependency_links.txt
+writing entry points to build/bug2_nav/bug2_nav.egg-info/entry_points.txt
+writing requirements to build/bug2_nav/bug2_nav.egg-info/requires.txt
+writing top-level names to build/bug2_nav/bug2_nav.egg-info/top_level.txt
+writing manifest file 'build/bug2_nav/bug2_nav.egg-info/SOURCES.txt'
+reading manifest file 'build/bug2_nav/bug2_nav.egg-info/SOURCES.txt'
+writing manifest file 'build/bug2_nav/bug2_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build
+creating /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build/lib
+creating /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build/lib/bug2_nav
+copying bug2_nav/__init__.py -> /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build/lib/bug2_nav
+copying bug2_nav/left_wall_following.py -> /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build/lib/bug2_nav
+copying bug2_nav/laser_scan.py -> /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build/lib/bug2_nav
+running install
+running install_lib
+creating /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/python3.10/site-packages/bug2_nav
+copying /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build/lib/bug2_nav/__init__.py -> /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/python3.10/site-packages/bug2_nav
+copying /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build/lib/bug2_nav/left_wall_following.py -> /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/python3.10/site-packages/bug2_nav
+copying /home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/build/lib/bug2_nav/laser_scan.py -> /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/python3.10/site-packages/bug2_nav
+byte-compiling /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/python3.10/site-packages/bug2_nav/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/python3.10/site-packages/bug2_nav/left_wall_following.py to left_wall_following.cpython-310.pyc
+byte-compiling /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/python3.10/site-packages/bug2_nav/laser_scan.py to laser_scan.cpython-310.pyc
+running install_data
+creating /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/share/ament_index
+creating /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/share/ament_index/resource_index
+creating /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/share/ament_index/resource_index/packages
+copying resource/bug2_nav -> /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/share/ament_index/resource_index/packages
+copying package.xml -> /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/share/bug2_nav
+running install_egg_info
+Copying build/bug2_nav/bug2_nav.egg-info to /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/python3.10/site-packages/bug2_nav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing laser_scan script to /home/phumint/turtlebot3_ws/src/bug2_nav/install/bug2_nav/lib/bug2_nav
+writing list of installed files to '/home/phumint/turtlebot3_ws/src/bug2_nav/build/bug2_nav/install.log'

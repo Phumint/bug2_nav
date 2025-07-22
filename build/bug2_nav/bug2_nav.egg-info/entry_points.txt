@@ -1,0 +1,3 @@
+[console_scripts]
+laser_scan = bug2_nav.laser_scan:main
+
