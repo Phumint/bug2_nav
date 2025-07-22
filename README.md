@@ -22,7 +22,7 @@ colcon build --packages-select bug2_nav
 # Source your workspace
 source install/setup.bash
 ```
-### Circumnavigation Algorithm
+### Circumnavigation Algorithm (Wall - Following)
 You can run the simulation for the circumvaigation algorithm with the following commands:
 
 1. **In one terminal, launch the world:**
@@ -34,7 +34,60 @@ ros2 launch bug2_nav building_1.launch.py
 ```bash
 ros2 run bug2_nav right_wall_following
 ```
+The algorithm flow is as follows:
 
+```
+state ← FORWARD
+
+loop:
+    read laser scan data
+    front_dist ← min(front region)
+    right_wall_dist ← average of right-front and right-mid regions
+
+    if state = FORWARD:
+        if front_dist < threshold:
+            state ← TURN_TO_WALL
+        else if in open space:
+            state ← SEARCH_FOR_WALL
+        else:
+            move forward
+
+    else if state = SEARCH_FOR_WALL:
+        slowly move and turn right
+        if wall detected on right:
+            state ← TURN_TO_WALL
+        else if obstacle in front:
+            state ← TURN_TO_WALL
+
+    else if state = TURN_TO_WALL:
+        turn left
+        if front is clear and wall on right:
+            state ← FOLLOW_WALL
+        else if front blocked:
+            continue turning
+        else:
+            state ← SEARCH_FOR_WALL
+
+    else if state = FOLLOW_WALL:
+        if front_dist < threshold:
+            state ← TURN_TO_WALL
+        else if wall lost (right too far):
+            state ← TURN_CORNER
+        else:
+            error ← desired_wall_dist - right_wall_dist
+            angular_z ← kp × error
+            move forward with angular_z
+
+    else if state = TURN_CORNER:
+        slowly move and turn right
+        if wall re-detected and front is clear:
+            state ← FOLLOW_WALL
+        else if front blocked:
+            state ← TURN_TO_WALL
+        else if in open space:
+            state ← SEARCH_FOR_WALL
+
+```
 
 ### Bug 0 Algorithm
 ```
