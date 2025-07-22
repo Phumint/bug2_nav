@@ -27,18 +27,8 @@ colcon build --packages-select bug2_nav
 source install/setup.bash
 ```
 ### Circumnavigation Algorithm (Wall - Following)
-You can run the simulation for the circumvaigation algorithm with the following commands:
 
-1. **In one terminal, launch the world:**
-
-```bash
-ros2 launch bug2_nav building_1.launch.py
-```
-2. **In another terminal, run the wall following node:**
-```bash
-ros2 run bug2_nav right_wall_following
-```
-The algorithm flow is as follows:
+The wall following algorithm flow is as follows:
 
 ```
 state ← FORWARD
@@ -91,6 +81,18 @@ loop:
         else if in open space:
             state ← SEARCH_FOR_WALL
 ```
+You can run the simulation for the circumvaigation algorithm with the following commands:
+
+1. **In one terminal, launch the world:**
+
+```bash
+ros2 launch bug2_nav building_1.launch.py
+```
+2. **In another terminal, run the wall following node:**
+```bash
+ros2 run bug2_nav right_wall_following
+```
+
 ### Bug 0 Algorithm
 ```
 while not at goal:
